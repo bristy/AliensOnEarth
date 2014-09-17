@@ -1,0 +1,5 @@
+Code Name    :    1
+Home Planet    :    Jupiter
+Blood Color    :    Red
+No of Antennas    :    2
+No of Legs    :    19
