@@ -7,7 +7,19 @@ import java.io.InputStreamReader;
 import com.register.alien.exportformat.BaseExportFormat;
 import com.register.alien.model.AlienModel;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class Main. This is entry point to AlienOnEarth application. This behaves
+ * as view and controller as well.
+ */
 public class Main {
+
+	/**
+	 * The main method.
+	 * 
+	 * @param argv
+	 *            the arguments
+	 */
 	public static void main(String[] argv) {
 		BufferedReader bufferedReader = new BufferedReader(
 				new InputStreamReader(System.in));
@@ -65,6 +77,13 @@ public class Main {
 
 	}
 
+	/**
+	 * Checks if is number.
+	 * 
+	 * @param str
+	 *            the str
+	 * @return true, if is number
+	 */
 	private static boolean isNumber(String str) {
 		if (null != str) {
 			try {

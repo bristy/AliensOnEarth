@@ -11,12 +11,27 @@ import com.itextpdf.text.pdf.PdfWriter;
 import com.register.alien.model.AlienModel;
 import com.register.main.CommonConstant;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class PdfFormat.
+ */
 public class PdfFormat extends BaseExportFormat {
 
+	/**
+	 * Instantiates a new pdf format.
+	 * 
+	 * @param alien
+	 *            the alien
+	 */
 	public PdfFormat(AlienModel alien) {
 		super(alien);
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.register.alien.exportformat.BaseExportFormat#export()
+	 */
 	@Override
 	public void export() {
 		if (null != alien) {

@@ -8,12 +8,24 @@ import java.util.List;
 import com.register.alien.model.AlienModel;
 import com.register.main.CommonConstant;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class TextFormat.
+ */
 public class TextFormat extends BaseExportFormat {
 
+	/**
+	 * Instantiates a new text format.
+	 *
+	 * @param alien the alien
+	 */
 	public TextFormat(AlienModel alien) {
 		super(alien);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.register.alien.exportformat.BaseExportFormat#export()
+	 */
 	@Override
 	public void export() {
 		if (null != alien) {
