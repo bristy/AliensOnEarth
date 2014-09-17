@@ -8,7 +8,7 @@ import com.register.alien.model.AlienModel;
 // TODO: Auto-generated Javadoc
 /**
  * A factory for creating Export objects. If we want to add new export feature
- * we have to register that here
+ * we have to register that here.
  */
 public class ExportFactory {
 	// stop extension of this class
