@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import com.register.alien.exportformat.TextFormat;
+import com.register.alien.exportformat.BaseExportFormat;
 import com.register.alien.model.AlienModel;
 
 public class Main {
@@ -38,20 +38,20 @@ public class Main {
 				inp = bufferedReader.readLine();
 				if (isNumber(inp)) {
 					userInput = Integer.parseInt(inp);
-					switch (userInput) {
-					case CommonConstant.TEXT:
-						new TextFormat(alien).export();
+					if (userInput == CommonConstant.EXIT_CODE) {
 						flag = false;
-						break;
-
-					case CommonConstant.EXIT_CODE:
-						flag = false;
-						break;
-
-					default:
-						flag = true;
-						break;
+					} else {
+						BaseExportFormat format = ExportFactory
+								.getExportFormat(userInput, alien);
+						if (null != format) {
+							flag = false;
+							format.export();
+						} else {
+							flag = true;
+							System.out.println("Wrong Choice! Try Again :)");
+						}
 					}
+
 				} else {
 					flag = true;
 					System.out.println("Wrong Choice! Try Again :)");
