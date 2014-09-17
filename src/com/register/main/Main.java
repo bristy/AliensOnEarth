@@ -31,6 +31,7 @@ public class Main {
 			System.out.println("Input Export Preferences------------------");
 			System.out.println("Exit Code : " + CommonConstant.EXIT_CODE);
 			System.out.println("TEXT : " + CommonConstant.TEXT);
+			System.out.println("PDF : " + CommonConstant.PDF);
 			int userInput = CommonConstant.TEXT; // default is text
 			String inp;
 			boolean flag = true; // to loop more

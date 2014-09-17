@@ -1,6 +1,5 @@
 package com.register.main;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class CommonConstant. Used for storing some common constant
  */
@@ -24,5 +23,9 @@ public class CommonConstant {
 	/** The Constant TEXT. */
 	public static final int TEXT = 0;
 
+	/** The Constant PDF. */
+	public static final int PDF = 1;
+
+	/** The Constant EXIT_CODE. */
 	public static final int EXIT_CODE = -1;
 }
